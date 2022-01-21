@@ -1,21 +1,6 @@
 # Home Price Predictor
 
 ## Background
-### Software
- *(add versions)*
-- Jupyter Notebook
-	- Python
-- pgAdmin 4
-	- PostgreSQL
-- [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/d/qAGqUr)
-- Tableau
-
-### Data Sources
-- Kaggle: [Preparing the D.C. Real Property Dataset](https://www.kaggle.com/christophercorrea/preparing-the-d-c-real-property-dataset/data)
-- Open Data DC: [School Attendance Zones (Senior High)](https://opendata.dc.gov/datasets/DCGIS::school-attendance-zones-senior-high/explore?location=38.891085,-77.020974,12.00&showTable=true)
-- DC Public Schools : [School List](https://profiles.dcps.dc.gov/)
-- FRED Economic Data: [Bank Prime Loan Rate Changes: Historical Dates of Changes and Rates (PRIME)](https://fred.stlouisfed.org/series/PRIME)
-
 ### Project Description
 **Topic:** Home Price Predictor
 
@@ -26,6 +11,20 @@
 2. How does Prime Rate affect home value?
 3. Are homes in the area being under- or over-valued?
 
+### Data Sources
+- Kaggle: [Preparing the D.C. Real Property Dataset](https://www.kaggle.com/christophercorrea/preparing-the-d-c-real-property-dataset/data)
+- Open Data DC: [School Attendance Zones (Senior High)](https://opendata.dc.gov/datasets/DCGIS::school-attendance-zones-senior-high/explore?location=38.891085,-77.020974,12.00&showTable=true)
+- DC Public Schools : [School List](https://profiles.dcps.dc.gov/)
+- FRED Economic Data: [Bank Prime Loan Rate Changes: Historical Dates of Changes and Rates (PRIME)](https://fred.stlouisfed.org/series/PRIME)
+
+### Software
+ *(add versions)*
+- Jupyter Notebook
+	- Python
+- pgAdmin 4
+	- PostgreSQL
+- [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/d/qAGqUr)
+- Tableau
 
 ## Data Exploration
 Description of Data Exploration Phase
