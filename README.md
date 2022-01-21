@@ -1,23 +1,27 @@
 # Home Price Predictor
 
 ## Background
-### Software (add versions)
-- > Jupyter Notebook
-- >> Pytho
+### Software
+ *(add versions)*
+- Jupyter Notebook
+	- Python
 - pgAdmin 4
-- > PostfreSQL
-- Quick DBD
+	- PostgreSQL
+- [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/d/qAGqUr)
 - Tableau
 
 ### Data Sources
-- 
+- Kaggle: [Preparing the D.C. Real Property Dataset](https://www.kaggle.com/christophercorrea/preparing-the-d-c-real-property-dataset/data)
+- Open Data DC: [School Attendance Zones (Senior High)](https://opendata.dc.gov/datasets/DCGIS::school-attendance-zones-senior-high/explore?location=38.891085,-77.020974,12.00&showTable=true)
+- DC Public Schools : [School List](https://profiles.dcps.dc.gov/)
+- FRED Economic Data: [Bank Prime Loan Rate Changes: Historical Dates of Changes and Rates (PRIME)](https://fred.stlouisfed.org/series/PRIME)
 
 ### Project Description
-Topic: Home Price Predictor
+**Topic:** Home Price Predictor
 
-Reason: Real estate is a hot market right now and all of group members were interested in seeing how various factors affect the value of home in our area.
+**Reason:** Real estate is a hot market right now and all of group members were interested in seeing how various factors affect the value of home in our area.
 
-Questions We Hope to Answer
+**Questions We Hope to Answer**
 1. Does the rating of schools affect the home value? If so, how?
 2. How does Prime Rate affect home value?
 3. Are homes in the area being under- or over-valued?
@@ -32,16 +36,7 @@ TBD
 
 ## Database
 
-Add ERD Screenshot
-Sample Data that mimics final Data
-Data Schema
-Draft ML Model connected to Data
-
-DB Stores static Data for Project
-DB interfaces with Source OR ML Feed
-+2 Tables / Collections
-+1 JOIN
-+1 Connection String
+<img width="736" alt="ERD" src="https://user-images.githubusercontent.com/89493488/150467257-ad2a729d-a177-4db0-ab2e-2defd93d64b9.png">
 
 ## Machine Learning
 
@@ -64,3 +59,4 @@ Description of interactive elements
 - Plotting schools & house on map
 - Graph of Prime Rate over time
 
+> Written with [StackEdit](https://stackedit.io/).
