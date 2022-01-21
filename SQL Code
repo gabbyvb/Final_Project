@@ -1,0 +1,119 @@
+-- PRIME TABLE
+
+-- Pulling prime table (written to SQL using Python in a Jupyter Notebook)
+DROP TABLE IF EXISTS prime;
+SELECT * FROM prime
+ORDER BY "DATE" ASC;
+
+-- Adding missing rows to Prime data table
+-- Data source skipped years where the Prime Rate stayed the same
+INSERT INTO prime ("DATE", "PRIME")
+VALUES 
+	(1993, 6),
+	(2009, 4.93),
+	(2010, 4.93),
+	(2011, 4.93),
+	(2012, 4.93),
+	(2013, 4.93),
+	(2014, 4.93);
+
+-- Deleting rows from prime table that were added by mistake
+DELETE FROM prime 
+WHERE "PRIME" ISNULL;
+
+-- Removing "index" column from prime table
+ALTER TABLE prime
+DROP COLUMN "index";
+
+-- DC SCHOOLS TABLE
+
+-- Pulling dc_schools table (written to SQL using Python in a Jupyter Notebook)
+DROP TABLE IF EXISTS dc_schools;
+SELECT * FROM dc_schools;
+
+-- Removing "index" column from dc_schools table
+ALTER TABLE dc_schools
+DROP COLUMN "index";
+
+-- WARDS DC SCHOOLS TABLE
+
+-- Pulling wards_dc_schools table (written to SQL using Python in a Jupyter Notebook)
+DROP TABLE IF EXISTS wards_dc_schools;
+SELECT * FROM wards_dc_schools
+ORDER BY "Ward" ASC;
+
+-- Removing "index" column from wards_dc_schools table
+ALTER TABLE wards_dc_schools
+DROP COLUMN "index";
+
+-- Deleting rows not marked for ML model from wards_dc_schools table
+-- We are only using 1 DC Public High School per Ward
+DELETE FROM wards_dc_schools 
+WHERE "Include in ML Model" = 'No';
+
+-- Dropping Roosevelt High School to have unique values in Ward (primary key)
+DELETE FROM wards_dc_schools
+WHERE "School" = 'Roosevelt High School';
+
+-- HOUSE TABLE
+
+-- Need raw DC_Data file or updated clean house data
+DROP TABLE IF EXISTS house;
+SELECT * FROM house;
+
+-- Change SALEDATE data type to bigint
+ALTER TABLE house
+ALTER COLUMN "SALEDATE" TYPE INT;
+
+-- RELATIONSHIPS
+
+-- Creating One-to- Many (House) relationship between 
+-- House & Prime table
+-- Made DATE in prime table the Primary Key
+ALTER TABLE prime
+ADD CONSTRAINT PK_PrimeRate PRIMARY KEY ("DATE");
+
+-- Made SALEDATE in house table the Foreign Key
+ALTER TABLE house 
+ADD CONSTRAINT FK_PrimeRate
+FOREIGN KEY ("SALEDATE") 
+REFERENCES prime("DATE");
+
+-- Creating One-to- Many (House) relationship between 
+-- House & Wards_DC_Schools table
+-- Made DATE in prime table the Primary Key
+ALTER TABLE wards_dc_schools
+ADD CONSTRAINT PK_SchoolWard PRIMARY KEY ("Ward");
+
+-- Made SALEDATE in house table the Foreign Key
+ALTER TABLE house 
+ADD CONSTRAINT FK_SchoolWard
+FOREIGN KEY ("WARD") 
+REFERENCES wards_dc_schools("Ward");
+
+-- Creating One-to- Many (House) relationship between 
+-- DC_Schools & Wards_DC_Schools table
+-- Made DATE in prime table the Primary Key
+ALTER TABLE wards_dc_schools
+ADD CONSTRAINT PK_SchoolRank PRIMARY KEY ("School");
+
+-- Made SALEDATE in house table the Foreign Key
+ALTER TABLE dc_schools 
+ADD CONSTRAINT FK_SchoolRank
+FOREIGN KEY ("School") 
+REFERENCES wards_dc_schools("School");
+
+-- Creating new table from Left Join to pull 
+-- Rank (2018-19) and SchoolDigger Star Rating 
+-- from dc_schools to wards_dc_schools
+SELECT 
+	"wd"."School", 
+	"wd"."Ward", 
+	"wd"."Include in ML Model", 
+	"dc"."Rank (2018-19)",
+	"dc"."SchoolDigger Star Rating"
+INTO schools_ward_rank
+FROM wards_dc_schools wd
+LEFT JOIN dc_schools dc ON "wd"."School" = "dc"."School"
+ORDER BY "Ward" ASC;
+
