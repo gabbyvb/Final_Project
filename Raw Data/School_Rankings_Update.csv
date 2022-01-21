@@ -1,0 +1,30 @@
+﻿Rank (2018-19),School,Ward,District,Address,City,Zip,Phone,Include in ML Model
+1,Benjamin Banneker High School,6,District of Columbia Public Schools,800 Euclid St. NW,Washington,20001,(202) 671-6320,No
+2,School Without Walls High School,2,District of Columbia Public Schools,2130 G St. NW,Washington,20037,(202) 645-9690,Yes
+3,Washington Latin PCS - Upper School,4,Washington Latin PCS,5200 2nd Street NW,Washington,20011,(202) 723-1171,No
+4,McKinley Technology High School,5,District of Columbia Public Schools,151 T St. NE,Washington,20002,(202) 281-3950,No
+5,Thurgood Marshall Academy PCS,8,Thurgood Marshall Academy PCS,2427 Martin Luther King Jr Av,Washington,20020,(202) 563-6862,No
+6,Woodrow Wilson High School,3,District of Columbia Public Schools,3950 Chesapeake St. NW,Washington,20016,(202) 282-0120,Yes
+7,Basis Dc Pcs,2,Basis Dc Pcs,410 8th Street NW,Washington,20004,(202) 803-6490,No
+8,KIPP DC - College Preparatory PCS,8,KIPP Dc Pcs,1405 Brentwood Parkway NE,Washington,20002,(202) 678-2527,No
+9,Duke Ellington School of the Arts,2,District of Columbia Public Schools,3500 R St. NW,Washington,20007,(202) 282-0123,No
+10,Friendship PCS - Technology Preparatory High School,8,Friendship PCS,2705 Martin Luther King Jr Av,Washington,20032,(202) 552-5700,No
+11,Columbia Heights Education Campus,1,District of Columbia Public Schools,3101 16th St. NW,Washington,20010,(202) 939-7700,No
+12,Paul PCS - International High School,4,Paul PCS,5800 8th Street NW,Washington,20011,(202) 291-7499,No
+13,Capital City PCS - High School,4,Capital City PCS,100 Peabody Street NW,Washington,20011,(202) 808-9800,No
+14,Idea Pcs,7,Idea Pcs,1027 45th Street NE,Washington,20019,(202) 399-4750,No
+15,Richard Wright PCS for Journalism and Media Arts,6,Richard Wright PCS for Journalism and Media Arts,475 School Street SW,Washington,20024,(202) 388-1011,No
+16,Phelps Architecture Construction and Engineering High School,5,District of Columbia Public Schools,704 26th St. NE,Washington,20002,(202) 729-4360,No
+17,E.L. Haynes PCS - High School,4,E.L. Haynes PCS,4501 Kansas Avenue NW,Washington,20011,(202) 667-4446,No
+18,Cesar Chavez Public Charter Schools for Public Policy,7,Cesar Chavez PCS for Public Policy,3701 Hayes Street NE,Washington,20019,(202) 398-2230,No
+19,Eastern High School,6,District of Columbia Public Schools,1700 East Capitol St. NE,Washington,20003,(202) 698-4500,Yes
+20,Friendship PCS - Collegiate Academy,8,Friendship PCS,4095 Minnesota Avenue NE,Washington,20019,(202) 396-5500,No
+21,SEED PCS of Washington DC,7,Seed Pcs,4300 C Street SE,Washington,20019,(202) 248-7773,No
+22,Roosevelt High School,4,District of Columbia Public Schools,4301 13th St. NW,Washington,20011,(202) 576-6130,Yes
+23,Dunbar High School,5,District of Columbia Public Schools,101 N St. NW,Washington,20001,(202) 698-3762,Yes
+24,Anacostia High School,8,District of Columbia Public Schools,1601 16th St. SE,Washington,20020,(202) 698-2155,Yes
+25,Ballou High School,8,District of Columbia Public Schools,3401 4th St. SE,Washington,20032,(202) 645-3400,No
+26,H.D. Woodson High School,7,District of Columbia Public Schools,540 55th St. NE,Washington,20019,(202) 939-2030,Yes
+27,Cardozo Education Campus,1,District of Columbia Public Schools,1200 Clifton St. NW,Washington,20009,(202) 673-7385,Yes
+28,Coolidge High School,4,District of Columbia Public Schools,6315 5th St. NW,Washington,20011,(202) 671-6080,Yes
+29,Maya Angelou PCS - High School,7,Maya Angelou PCS,5600 East Capitol Street NE,Washington,20019,(202) 379-4335,No
