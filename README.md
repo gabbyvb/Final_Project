@@ -44,12 +44,15 @@ Uses Provisional DB
 Labels for INPUTs
 
 Description of Data Preproscessing
+
 Used pandas to clean data as well as remove large amounts of rows from the ML dataset due to memory errors. Also used OneHotEncoder to convert categorical data into numerical.
 
 Description of Feature Engineering - Feature Select - Why and How Selected?
+
 Since I was able to complete the model using the limited data, I used 'feature importances' to find the most impactful features and will look to drop the unimpactful features to use more. With the more limited data I should be able to include previously dropped rows. 
 
 Model Limitations and Benefits
+
 A limitation, at least until we figure it out, is the amount of data that needs to be processed for the RandomForestClassifier which currently has 100 forests. Also, the accuracy is abysmal for both models. I think I can make the accuracy better if the price is binned by $25,000 increments and indexed so the model would need to predict the index rather than the precise price. 
 ## Dashboard
 
