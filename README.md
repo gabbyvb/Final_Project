@@ -26,6 +26,8 @@
 - [Quick Database Diagrams](https://app.quickdatabasediagrams.com/#/d/qAGqUr)
 - Tableau
 
+### Group Presentation Can Be Found [Here](https://docs.google.com/presentation/d/1iFYkaugBKUH1rIhKyagy_23oyhhAb3F-Tw-sqRhbQg0/edit?usp=sharing)
+
 ## Data Exploration
 Description of Data Exploration Phase
 Graphing, looking for outliers,
