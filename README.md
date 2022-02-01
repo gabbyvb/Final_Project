@@ -67,7 +67,7 @@ The current accuracy score is ~8.0%
 
 Update 2:
 
-Unfortunately, after trying to alter my models I wasn't able to achieve an accuracy >50%. I reduced the difference between the minimum and maximum house prices and I reduced the number of bins from 60 to 23. I think the reason might be due to how different house prices could be in DC due to location even though they could possibly have the same number of features. For example, a house in southeast DC which is considered mostly low income could have the same number of features as a house in northwest DC which is considered higher income but sell for completely difference prices. 
+Unfortunately, after trying to alter my models I wasn't able to achieve an accuracy >50%. I reduced the difference between the minimum and maximum house prices and I reduced the number of bins from 60 to 23. I think the reason might be due to how different house prices could be in DC due to location even though they could possibly have the same number of features. For example, a house in southeast DC which is considered mostly low income could have the same number of features as a house in northwest DC which is considered higher income but sell for completely different prices. 
 
 The current accuracy score is ~9.0%
 
