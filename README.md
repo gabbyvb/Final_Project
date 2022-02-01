@@ -59,6 +59,10 @@ Model Limitations and Benefits
 
 A limitation, at least until we figure it out, is the amount of data that needs to be processed for the RandomForestClassifier which currently has 100 forests. Also, the accuracy is abysmal for both models. I think I can make the accuracy better if the price is binned by $25,000 increments and indexed so the model would need to predict the index rather than the precise price. 
 
+Update:
+
+I was able to figure out how to process the dataset without getting a memory error by changing RandomForrestClassifier to BalancedRandomForrest Classifier. I was still unable to achieve the desired accuracy. I unknowingly had many outliers within my feature data which after dropping didn't alter the accuracy but still should be done. I think a potential reason why my model isn't accurate is due to the large difference between the minimum price which is around $25,000 and a maximum of $1,500,000. The next step could be to shorten the difference between the min and max and then to increase the increments of the bins to $50,000.
+
 ## Dashboard
 
 - Tableau is the Data Visualization Tool currently being used for this Project and will depict the following:
