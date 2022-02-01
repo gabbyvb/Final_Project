@@ -60,12 +60,17 @@ Model Limitations and Benefits
 A limitation, at least until we figure it out, is the amount of data that needs to be processed for the RandomForestClassifier which currently has 100 forests. Also, the accuracy is abysmal for both models. I think I can make the accuracy better if the price is binned by $25,000 increments and indexed so the model would need to predict the index rather than the precise price. 
 ## Dashboard
 
-A Blueprint for a Dashboard
-Storyboard on Google Slides
-Description of Toolsto be used
-Description of interactive elements
+Tableau is the Data Visualization Tool currently being used for this Project and will depict the following:
+Average Price by Location
+Home Sales By Year
+Map Depicting the Location of Schools in each Ward of DC
+Average Price by Number of Bedrooms
+Average Price vs. School Ranking
+Interest Rate by Year of Home Purchase
 
-- Plotting schools & house on map
-- Graph of Prime Rate over time
+Link to Tableau: https://public.tableau.com/app/profile/dolores3708/viz/Final_Project_Draft/Story1?publish=yes
+
+Google Slides will be used to create a Storyboard for our Final Presentation
+
 
 > Written with [StackEdit](https://stackedit.io/).
