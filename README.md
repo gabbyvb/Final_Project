@@ -63,13 +63,20 @@ Update:
 
 I was able to figure out how to process the dataset without getting a memory error by changing RandomForrestClassifier to BalancedRandomForrest Classifier. I was still unable to achieve the desired accuracy. I unknowingly had many outliers within my feature data which after dropping didn't alter the accuracy but still should be done. I think a potential reason why my model isn't accurate is due to the large difference between the minimum price which is around $25,000 and a maximum of $1,500,000. The next step could be to shorten the difference between the min and max and then to increase the increments of the bins to $50,000.
 
-The current accuracy score is ~8.0%
+The current accuracy score for both models is ~8.0%
 
 Update 2:
 
 Unfortunately, after trying to alter my models I wasn't able to achieve an accuracy >50%. I reduced the difference between the minimum and maximum house prices and I reduced the number of bins from 60 to 23. I think the reason might be due to how different house prices could be in DC due to location even though they could possibly have the same number of features. For example, a house in southeast DC which is considered mostly low income could have the same number of features as a house in northwest DC which is considered higher income but sell for completely different prices. 
 
-The current accuracy score is ~9.0%
+The current accuracy score for both models is ~9.0%
+
+Update 3:
+
+I made a huge mistake. I was using a classifier when I should have been using regression. I made the necessary changes to the RandomForrestRegressor and was able to achieve a higher accuracy!
+
+The current accuracy score for the RFR model is ~35.0%
+
 
 ## Dashboard
 
