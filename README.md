@@ -57,15 +57,19 @@ We chose the features from the original dataset that made the most sense when ho
 
 The features include:
  	
-* HF_BATHRM 	* SALEDATE	* PRIME
-
-* ROOMS 	* KITCHENS	* WARD
-
-* BEDRM 	* FIREPLACES	* PRIME
-
-* LANDAREA 	* ZIPCODE	* AC 	 	 	 	 	 	
-
-* QUADRANT	* BATHRM
+* HF_BATHRM - Number of half bathrooms in the house		
+* SALEDATE - Year of sale 	
+* PRIME - Prime rate for the year of the saledate
+* ROOMS - Number of rooms in the house	
+* KITCHENS -  Number of kitchens in the house		
+* WARD - Ward of Washington DC where the house is located
+* BEDRM  -  Number of bedrooms in the house		
+* FIREPLACES - Number of fireplaces in the house		
+* LANDAREA - Square footage of land the house is placed on 
+* ZIPCODE - Zipcode of the house
+* AC - If the house has AC or not 	 	 	 	 	 	
+* QUADRANT - Quandrant of Washington DC where the house is located
+* BATHRM - Number of bathrooms in the house
 
 Model Limitations and Benefits
 
@@ -73,7 +77,7 @@ A limitation, at least until we figure it out, is the amount of data that needs 
 
 Update:
 
-I was able to figure out how to process the dataset without getting a memory error by changing RandomForrestClassifier to BalancedRandomForrest Classifier. I was still unable to achieve the desired accuracy. I unknowingly had many outliers within my feature data which after dropping didn't alter the accuracy but still should be done. I think a potential reason why my model isn't accurate is due to the large difference between the minimum price which is around $25,000 and a maximum of $1,500,000. The next step could be to shorten the difference between the min and max and then to increase the increments of the bins to $50,000.
+I was able to figure out how to process the dataset without getting a memory error by changing RandomForrestClassifier to BalancedRandomForrestClassifier. I was still unable to achieve the desired accuracy. I unknowingly had many outliers within my feature data which after dropping didn't alter the accuracy but still should be done. I think a potential reason why my model isn't accurate is due to the large difference between the minimum price which is around $25,000 and a maximum of $1,500,000. The next step could be to shorten the difference between the min and max and then to increase the increments of the bins to $50,000.
 
 The current accuracy score for both models is ~8.0%
 
@@ -88,7 +92,9 @@ Update 3:
 I made a huge mistake. I was using a classifier when I should have been using regression. I made the necessary changes to the RandomForrestRegressor and was able to achieve a higher accuracy!
 
 The current accuracy score for the RFR model is ~35.0%
+The current accuracy score for the LR model is ~14.0%
 
+The type of models used was RandomForrestRegression and LinearRegression.
 
 ## Dashboard
 
