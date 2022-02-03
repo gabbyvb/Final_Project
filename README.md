@@ -58,11 +58,11 @@ We chose the features from the original dataset that made the most sense when ho
 The features include:
 BATHRM 	
 
-*HF_BATHRM 	
+* HF_BATHRM 	
 
-*ROOMS 	
+* ROOMS 	
 
-BEDRM 	
+* BEDRM 	
 
 SALEDATE 	
 
