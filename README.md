@@ -56,17 +56,16 @@ Description of Feature Engineering - Feature Select - Why and How Selected?
 We chose the features from the original dataset that made the most sense when homebuyers are looking to buy a house. 
 
 The features include:
-BATHRM 	
+ 	
+* HF_BATHRM 	* SALEDATE	* PRIME
 
-* HF_BATHRM 	
+* ROOMS 	* KITCHENS	* WARD
 
-* ROOMS 	
+* BEDRM 	* FIREPLACES	* PRIME
 
-* BEDRM 	
+* LANDAREA 	* ZIPCODE	* AC 	 	 	 	 	 	
 
-SALEDATE 	
-
-KITCHENS 	FIREPLACES 	LANDAREA 	ZIPCODE 	WARD 	PRIME 	AC_N 	AC_Y 	QUADRANT_NE 	QUADRANT_NW 	QUADRANT_SE 	QUADRANT_SW 	PRICE 	INDEX_BIN
+* QUADRANT	* BATHRM
 
 Model Limitations and Benefits
 
