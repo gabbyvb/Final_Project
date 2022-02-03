@@ -53,7 +53,7 @@ Used pandas to clean data as well as remove large amounts of rows from the ML da
 
 Description of Feature Engineering - Feature Select - Why and How Selected?
 
-Since I was able to complete the model using the limited data, I used 'feature importances' to find the most impactful features and will look to drop the unimpactful features to use more. With the more limited data I should be able to include previously dropped rows. 
+We chose the features from the original dataset that made the most sense when homebuyers are looking to buy a house. The features include
 
 Model Limitations and Benefits
 
