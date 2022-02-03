@@ -53,7 +53,20 @@ Used pandas to clean data as well as remove large amounts of rows from the ML da
 
 Description of Feature Engineering - Feature Select - Why and How Selected?
 
-We chose the features from the original dataset that made the most sense when homebuyers are looking to buy a house. The features include
+We chose the features from the original dataset that made the most sense when homebuyers are looking to buy a house. 
+
+The features include:
+BATHRM 	
+
+*HF_BATHRM 	
+
+*ROOMS 	
+
+BEDRM 	
+
+SALEDATE 	
+
+KITCHENS 	FIREPLACES 	LANDAREA 	ZIPCODE 	WARD 	PRIME 	AC_N 	AC_Y 	QUADRANT_NE 	QUADRANT_NW 	QUADRANT_SE 	QUADRANT_SW 	PRICE 	INDEX_BIN
 
 Model Limitations and Benefits
 
