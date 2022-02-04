@@ -47,7 +47,7 @@ Provisional ML Model
 Uses Provisional DB
 Labels for INPUTs
 
-### Data Preproscessing
+### Data Preprocessing
 
 Used pandas to clean data as well as remove large amounts of rows from the ML dataset due to memory errors. Also used OneHotEncoder to convert categorical data into numerical. Seaborn was used for visuals to help locate outliers which were eventually removed.
 
