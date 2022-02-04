@@ -4,7 +4,7 @@
 ### Project Description
 **Topic:** Home Price Predictor
 
-**Reason:** Real estate is a hot market right now and all group members were interested in seeing how various factors affect the value of a home in our area. The model and visualizations could be used to help a home buyer determine if the property they're instrested in is accurately valued.
+**Reason:** Real estate is a hot market right now and all group members were interested in seeing how various factors affect the value of a home in our area. The model and visualizations could be used to help a home buyer determine if the property they're interested in is accurately valued.
 
 **Questions We Hope to Answer**
 1. Does the rating of schools affect the home value? If so, how?
