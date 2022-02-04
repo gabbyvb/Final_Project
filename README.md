@@ -47,11 +47,11 @@ Provisional ML Model
 Uses Provisional DB
 Labels for INPUTs
 
-Description of Data Preproscessing
+### Data Preproscessing
 
 Used pandas to clean data as well as remove large amounts of rows from the ML dataset due to memory errors. Also used OneHotEncoder to convert categorical data into numerical. Seaborn was used for visuals to help locate outliers which were eventually removed.
 
-Description of Feature Engineering - Feature Select - Why and How Selected?
+### Feature Engineering - Feature Select - Why and How Selected?
 
 We chose the features from the original dataset that made the most sense when homebuyers are looking to buy a house. 
 
@@ -71,23 +71,23 @@ The features include:
 * QUADRANT - Quandrant of Washington DC where the house is located
 * BATHRM - Number of bathrooms in the house
 
-Model Limitations and Benefits
+### Model Limitations and Benefits
 
 A limitation, at least until we figure it out, is the amount of data that needs to be processed for the RandomForestClassifier which currently has 100 forests. Also, the accuracy is abysmal for both models. I think I can make the accuracy better if the price is binned by $25,000 increments and indexed so the model would need to predict the index rather than the precise price. 
 
-Update:
+### Update 1
 
 I was able to figure out how to process the dataset without getting a memory error by changing RandomForrestClassifier to BalancedRandomForrestClassifier. I was still unable to achieve the desired accuracy. I unknowingly had many outliers within my feature data which after dropping didn't alter the accuracy but still should be done. I think a potential reason why my model isn't accurate is due to the large difference between the minimum price which is around $25,000 and a maximum of $1,500,000. The next step could be to shorten the difference between the min and max and then to increase the increments of the bins to $50,000.
 
 The current accuracy score for both models is ~8.0%
 
-Update 2:
+### Update 2
 
 Unfortunately, after trying to alter my models I wasn't able to achieve an accuracy >50%. I reduced the difference between the minimum and maximum house prices and I reduced the number of bins from 60 to 23. I think the reason might be due to how different house prices could be in DC due to location even though they could possibly have the same number of features. For example, a house in southeast DC which is considered mostly low income could have the same number of features as a house in northwest DC which is considered higher income but sell for completely different prices. 
 
 The current accuracy score for both models is ~9.0%
 
-Update 3:
+### Update 3
 
 I made a huge mistake. I was using a classifier when I should have been using regression. I made the necessary changes to the RandomForrestRegressor and was able to achieve a higher accuracy!
 
@@ -106,7 +106,7 @@ The type of models used was RandomForrestRegression and LinearRegression.
 	- Average Price vs. School Ranking
 	- Interest Rate by Year of Home Purchase
 
-Link to Tableau: https://public.tableau.com/app/profile/dolores3708/viz/Final_Project_Draft/Story1?publish=yes	
+[Tableau Dashboard](https://public.tableau.com/app/profile/dolores3708/viz/Final_Project_Draft/Story1?publish=yes)	
  
 - Google Slides will be used to create a Storyboard for our Final Presentation
 
