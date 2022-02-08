@@ -28,11 +28,15 @@
 ### Group Presentation Can Be Found [Here](https://docs.google.com/presentation/d/1iFYkaugBKUH1rIhKyagy_23oyhhAb3F-Tw-sqRhbQg0/edit?usp=sharing)
 
 ## Data Exploration
-Description of Data Exploration Phase
-Graphing, looking for outliers,
+We explored out data using Python & Jupyter Notebook. We utilized the Pandas, Matplotlib, Seaborn and Numpy libraries. The process we utilized to explore the data is outlined below.
 
-Description of Analysis Phase
-TBD
+<img width="795" alt="Data_Exploration_Process" src="https://user-images.githubusercontent.com/89493488/153049290-43d12230-6cfe-4dd4-b768-1f50b6d8e095.png">
+
+**Main Takeaways from Data Exploration**
+- Many outliers in the data set
+	- Led us to suspect that there were additional real estate types in the home data set
+- Had to transform many columns to the correct data type
+- Found many columns that did not add value to preducting home price
 
 ## Database
 
