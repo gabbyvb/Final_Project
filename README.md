@@ -39,7 +39,8 @@ TBD
 
 [Data Dictionary](https://docs.google.com/spreadsheets/d/1PIofEBS1nXVsO876CufvHLC2uMqvywRX_FMtP_agspc/edit?usp=sharing)
 
-![Final_ERD](https://user-images.githubusercontent.com/89493488/152898835-d879e08a-5205-430b-bfa3-43b7584af8a6.png)
+![Final_ERD](https://user-images.githubusercontent.com/89493488/152899084-dde9ca10-f2db-4280-9150-e436aaee0bfb.png)
+
 
 ## Machine Learning
 
