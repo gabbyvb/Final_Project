@@ -18,7 +18,6 @@
 - FRED Economic Data: [Bank Prime Loan Rate Changes: Historical Dates of Changes and Rates (PRIME)](https://fred.stlouisfed.org/series/PRIME)
 
 ### Software
- *(add versions)*
 - Jupyter Notebook
 	- Python
 - pgAdmin 4
@@ -36,6 +35,8 @@ Description of Analysis Phase
 TBD
 
 ## Database
+
+Our database was constructed using PostgreSQL in pgAdmin 4. Our tables and relationships are shown in the ERD below. For a more detailed description of the data, please use the data dictionary below.
 
 [Data Dictionary](https://docs.google.com/spreadsheets/d/1PIofEBS1nXVsO876CufvHLC2uMqvywRX_FMtP_agspc/edit?usp=sharing)
 
@@ -99,16 +100,26 @@ The type of models used was RandomForrestRegression and LinearRegression.
 
 ## Dashboard
 
-- Tableau is the Data Visualization Tool currently being used for this Project and will depict the following:
-	- Average Price by Location
-	- Home Sales By Year
-	- Map Depicting the Location of Schools in each Ward of DC
-	- Average Price by Number of Bedrooms
-	- Average Price vs. School Ranking
-	- Interest Rate by Year of Home Purchase
+[Tableau Dashboard](https://public.tableau.com/app/profile/dolores3708/viz/Final_Project_Draft/Story1?publish=yes)
 
-[Tableau Dashboard](https://public.tableau.com/app/profile/dolores3708/viz/Final_Project_Draft/Story1?publish=yes)	
- 
-- Google Slides will be used to create a Storyboard for our Final Presentation
+Tableau is the Data Visualization Tool currently being used for this Project and will depict the following:
+- Average Price by Location
+- Home Sales By Year
+- Map Depicting the Location of Schools in each Ward of DC
+- Average Price by Number of Bedrooms
+- Average Price vs. School Ranking
+- Interest Rate by Year of Home Purchase
+
+We were able to use our dashboard to answer two of our initial questions:
+
+1. Does the rating of schools affect the home value? If so, how?
+	
+	We can see that schools with a higher ranking are located in a ward where the average home price is higher.
+![Avg Home Pirce vs School Ranking](https://user-images.githubusercontent.com/89493488/153047576-f9a30b41-eb68-4050-ae8a-e1315f0ce1da.png)
+
+2. How does Prime Rate affect home value?
+	
+	We can see that as the interest (prime) rate has decreased, the average home price has increased over time.
+![Prime Rate vs Home Value](https://user-images.githubusercontent.com/89493488/153047600-f9f36b68-d7a0-4f40-b39c-53ea613f07e7.png)	
 
 > Written with [StackEdit](https://stackedit.io/).
