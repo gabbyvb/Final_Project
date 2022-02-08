@@ -13,7 +13,7 @@
 
 ### Data Sources
 - Kaggle: [Preparing the D.C. Real Property Dataset](https://www.kaggle.com/christophercorrea/preparing-the-d-c-real-property-dataset/data)
-- Open Data DC: [School Attendance Zones (Senior High)](https://opendata.dc.gov/datasets/DCGIS::school-attendance-zones-senior-high/explore?location=38.891085,-77.020974,12.00&showTable=true)
+- SchoolDigger.com: [District of Columbia High School Rankings](https://www.schooldigger.com/go/DC/schoolrank.aspx?level=3)
 - DC Public Schools : [School List](https://profiles.dcps.dc.gov/)
 - FRED Economic Data: [Bank Prime Loan Rate Changes: Historical Dates of Changes and Rates (PRIME)](https://fred.stlouisfed.org/series/PRIME)
 
